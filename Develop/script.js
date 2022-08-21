@@ -18,8 +18,25 @@ function generatePassword() {
     } else {
     break
     }
+  }
+  //Criteria Prompts for lowercase, uppercase, number and symbols
+  var getRandomLower = window.confirm("Would you like to include lowercase letters in your password?")
+  var getRandomUpper = window.confirm("Would you like to include uppercase letters in your password?")
+  var getRandomNumber = window.confirm("Would you like to include numbers in your password?")
+  var getRandomSymbol = window.confirm("Would you like to include symbols in your password?")
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
