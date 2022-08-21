@@ -8,3 +8,6 @@ User will simply click on the generate password button to be prompted for passwo
 Once password length has valid input then user will be asked to select whether or not to include lowercase letters, uppercase letters, numbers and symbols. Based on these 5 criteria a random password will be generated in the text for the user to use.
 
 ## Web URL
+https://tmunkhb.github.io/Challenge3.version2/
+## Screenshot
+![randompassword](https://user-images.githubusercontent.com/109834827/185811148-c3a3ef7e-2dd7-49f0-8acf-28c66329d339.PNG)
