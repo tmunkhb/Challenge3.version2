@@ -25,17 +25,13 @@ function generatePassword() {
   var getRandomNumber = window.confirm("Would you like to include numbers in your password?")
   var getRandomSymbol = window.confirm("Would you like to include symbols in your password?")
 
-
-
-
-
-
-
-
-
-
-
-
+  //Empty variable to be populated and called 
+  var generatedPassword = ""
+      
+  //For loop    
+  for (var i = 0; i < passwordLength; i++) {  
+    var randomList = ""
+    const symbols = '!@#$%^&*(){}[]=<>/,.?+-:;_'   
 
 }
 // Get references to the #generate element
@@ -49,6 +45,6 @@ function writePassword() {
   passwordText.value = password;
 
 }
-
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
