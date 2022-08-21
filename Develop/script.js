@@ -58,6 +58,9 @@ function generatePassword() {
 
   }
 
+//return to generate password to display on text
+return generatedPassword
+
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
