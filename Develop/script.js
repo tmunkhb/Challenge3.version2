@@ -31,7 +31,32 @@ function generatePassword() {
   //For loop    
   for (var i = 0; i < passwordLength; i++) {  
     var randomList = ""
-    const symbols = '!@#$%^&*(){}[]=<>/,.?+-:;_'   
+    const symbols = '!@#$%^&*(){}[]=<>/,.?+-:;_'
+    
+  //if statement with random lowercase, uppercase, numbers, symbols  
+    if (getRandomLower === true) {
+        randomList += (String.fromCharCode(Math.floor(Math.random() * 26) + 97))
+    }
+    
+    if (getRandomUpper === true) {
+        randomList += (String.fromCharCode(Math.floor(Math.random() * 26) + 65))
+    }
+    
+    if (getRandomNumber === true) {
+      randomList += (String.fromCharCode(Math.floor(Math.random() * 10) + 48))
+    }
+    
+    if (getRandomSymbol === true) {
+      randomList += symbols[Math.floor(Math.random() * symbols.length)]
+    }
+
+    if (randomList.length === 0) {
+      randomList += (String.fromCharCode(Math.floor(Math.random() * 26) + 97))
+    }
+    
+    generatedPassword += randomList.charAt(Math.floor(Math.random()*randomList.length))
+
+  }
 
 }
 // Get references to the #generate element
@@ -45,6 +70,6 @@ function writePassword() {
   passwordText.value = password;
 
 }
-}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
